@@ -39,6 +39,9 @@ module DemoApp
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
+    # Heroku precompile
+    config.assets.initialize_on_precompile = false
+
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
